@@ -22,9 +22,7 @@
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
 		<sonar.jacoco.reportPath>${project.basedir}/target/jacoco.exec</sonar.jacoco.reportPath>
 		<sonar.coverage.exclusions>
-			**/src/test/**, 
-			**/RootController.java,
-			**/TaskBackendApplication.java
+			src/main/java/br/ce/wcaquino/taskbackend/TaskBackendApplication.java
 		</sonar.coverage.exclusions>
 	</properties>
 
