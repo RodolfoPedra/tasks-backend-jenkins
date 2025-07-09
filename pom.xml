@@ -23,8 +23,8 @@
 		<sonar.jacoco.reportPath>${project.basedir}/target/jacoco.exec</sonar.jacoco.reportPath>
 		<sonar.exclusions>
 			**/src/test/**, 
-			**/src/main/java/br/ce/wcaquino/taskbackend/controller/RootController.java,
-			**/src/main/java/br/ce/wcaquino/taskbackend/TaskBackendApplication.java
+			**RootController.java,
+			**TaskBackendApplication.java
 		</sonar.exclusions>
 	</properties>
 
@@ -73,6 +73,11 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.sonarsource.scanner.maven</groupId>
+				<artifactId>sonar-maven-plugin</artifactId>
+				<version>3.9.1.2184</version>
 			</plugin>
 			<plugin>
 				<groupId>org.jacoco</groupId>
